@@ -62,26 +62,26 @@ define([
         // The 'options' object is passed as the layers options for constructor. Title will be used in the legend only. id's must be unique and have no spaces.
         // 3 'mode' options: MODE_SNAPSHOT = 0, MODE_ONDEMAND = 1, MODE_SELECTION = 2
         operationalLayers: [{
-            type: 'feature',
-            url: 'http://services1.arcgis.com/g2TonOxuRkIqSOFx/arcgis/rest/services/MeetUpHomeTowns/FeatureServer/0',
-            title: 'STLJS Meetup Home Towns',
-            options: {
-                id: 'meetupHometowns',
-                opacity: 1.0,
-                visible: true,
-                outFields: ['*'],
-                mode: 0
-            },
-            editorLayerInfos: {
-                disableGeometryUpdate: false
-            },
-            legendLayerInfos: {
-                exclude: false,
-                layerInfo: {
-                    title: 'My layer'
-                }
-            }
-  }, {
+  //          type: 'feature',
+  //          url: 'http://services1.arcgis.com/g2TonOxuRkIqSOFx/arcgis/rest/services/MeetUpHomeTowns/FeatureServer/0',
+  //          title: 'STLJS Meetup Home Towns',
+  //          options: {
+  //              id: 'meetupHometowns',
+  //              opacity: 1.0,
+  //              visible: true,
+  //              outFields: ['*'],
+  //              mode: 0
+  //          },
+  //          editorLayerInfos: {
+  //              disableGeometryUpdate: false
+  //          },
+  //          legendLayerInfos: {
+  //              exclude: false,
+  //              layerInfo: {
+  //                  title: 'My layer'
+  //              }
+  //          }
+  //}, {
             type: 'feature',
             url: 'http://sampleserver3.arcgisonline.com/ArcGIS/rest/services/SanFrancisco/311Incidents/FeatureServer/0',
             title: 'San Francisco 311 Incidents',
@@ -154,7 +154,7 @@ define([
               }
             },
             geocoder: {
-                include: false,
+                include: true,
                 id: 'geocoder',
                 type: 'domNode',
                 path: 'gis/dijit/Geocoder',
@@ -206,7 +206,7 @@ define([
                 }
             },
             scalebar: {
-                include: false,
+                include: true,
                 id: 'scalebar',
                 type: 'map',
                 path: 'esri/dijit/Scalebar',
@@ -236,7 +236,7 @@ define([
                 }
             },
             overviewMap: {
-                include: false,
+                include: true,
                 id: 'overviewMap',
                 type: 'map',
                 path: 'esri/dijit/OverviewMap',
@@ -270,7 +270,7 @@ define([
                 }
             },
             legend: {
-                include: false,
+                include: true,
                 id: 'legend',
                 type: 'titlePane',
                 path: 'esri/dijit/Legend',
@@ -283,7 +283,7 @@ define([
                 }
             },
             layerControl: {
-                include: false,
+                include: true,
                 id: 'layerControl',
                 type: 'titlePane',
                 path: 'gis/dijit/LayerControl',
