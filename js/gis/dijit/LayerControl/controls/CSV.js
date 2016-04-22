@@ -3,7 +3,7 @@ define([
     'dijit/_WidgetBase',
     'dijit/_TemplatedMixin',
     'dijit/_Contained',
-    './_Control', // layer control base class
+    './Control', // layer control base class
     './../plugins/legendUtil'
 ], function (
     declare,

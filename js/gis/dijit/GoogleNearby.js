@@ -13,7 +13,7 @@ define([
     'dijit/_TemplatedMixin',
     'dijit/_WidgetsInTemplateMixin',
 
-    './_SelectionLayersMixin',
+    './SelectionLayersMixin',
 
     // mapping & geo!
     'esri/config',
@@ -73,7 +73,7 @@ define([
     declare, lang, array, topic, Color, domConstruct,
     put,
     _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin,
-    _SelectionLayersMixin,
+    SelectionLayersMixin,
     esriConfig, Graphic, 
     FeatureLayer,
     GeometryService, DistanceParameters,
@@ -87,7 +87,7 @@ define([
     template
 ) {
 
-    return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, _SelectionLayersMixin], {
+    return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, SelectionLayersMixin], {
         widgetsInTemplate: true,
         templateString: template,
         baseClass: 'gis_NearbyDijit',

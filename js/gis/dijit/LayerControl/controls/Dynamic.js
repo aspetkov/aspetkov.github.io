@@ -13,9 +13,9 @@ define([
     'dijit/_Contained',
     'dijit/MenuItem',
     'dijit/MenuSeparator',
-    './_Control', // layer control base class
-    './_DynamicSublayer',
-    './_DynamicFolder',
+    './Control', // layer control base class
+    './DynamicSublayer',
+    './DynamicFolder',
     './../plugins/legendUtil',
     'dojo/i18n!./../nls/resource'
 ], function (

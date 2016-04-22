@@ -3,7 +3,7 @@ define([
     'dijit/_WidgetBase',
     'dijit/_TemplatedMixin',
     'dijit/_WidgetsInTemplateMixin',
-    'gis/dijit/_FloatingWidgetMixin',
+    'gis/dijit/FloatingWidgetMixin',
     'dojo/dom-construct',
     'dojo/on',
     'dojo/_base/lang',
@@ -13,9 +13,9 @@ define([
 	'dijit/layout/TabContainer',
 	'dijit/layout/ContentPane',
 	'xstyle/css!./Help/css/Help.css'
-], function (declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, _FloatingWidgetMixin, domConstruct, on, lang, aspect, template) {
+], function (declare, _WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, FloatingWidgetMixin, domConstruct, on, lang, aspect, template) {
 
-	return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, _FloatingWidgetMixin], {
+	return declare([_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin, FloatingWidgetMixin], {
 		widgetsInTemplate: true,
 		templateString: template,
 		title: 'Help',

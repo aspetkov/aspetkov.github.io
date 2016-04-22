@@ -48,7 +48,7 @@ define([
             this.inherited(arguments);
             if (!this.controller) {
                 topic.publish('viewer/handleError', {
-                    source: 'LayerControl/_Control',
+                    source: 'LayerControl/Control',
                     error: 'controller option is required'
                 });
                 this.destroy();
@@ -56,7 +56,7 @@ define([
             }
             if (!this.layer) {
                 topic.publish('viewer/handleError', {
-                    source: 'LayerControl/_Control',
+                    source: 'LayerControl/Control',
                     error: 'layer option is required'
                 });
                 this.destroy();
