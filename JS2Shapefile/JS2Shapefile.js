@@ -402,13 +402,13 @@
                             feat_xmin = thisPoint[0];
                         }
                         if (thisPoint[0] > feat_xmax) {
-                                feat_xmax = thisPoint[0];
+                            feat_xmax = thisPoint[0];
                         }
                         if (thisPoint[1] < feat_ymin) {
                             feat_ymin = thisPoint[1];
                         }
                         if (thisPoint[1] > feat_ymax) {
-                                feat_ymax = thisPoint[1];
+                            feat_ymax = thisPoint[1];
                         }
                     }
 
@@ -493,7 +493,7 @@
                 for (var i = 1; i < numRecords + 1; i++) {
                     var graphic = graphics[i - 1];
                     var numPointsOverall = 0;
-                  var numParts;
+                    var numParts;
 
                     if (shapetype == 'POLYLINE') {
                         numParts = graphic.geometry.paths.length;
