@@ -13,7 +13,7 @@ define([
     'dijit/_TemplatedMixin',
     'dijit/_WidgetsInTemplateMixin',
 
-    './_SelectionLayersMixin',
+    './SelectionLayersMixin',
 
     // mapping & geo!
     'esri/config',
