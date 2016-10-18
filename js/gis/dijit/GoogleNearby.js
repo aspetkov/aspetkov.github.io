@@ -65,7 +65,7 @@ define([
     'dijit/form/NumberTextBox',
     'dijit/form/Select',
     'dojox/form/CheckedMultiSelect',
-    './JS2Shapefile',
+    './GoogleNearby/JS2Shapefile',
 
     'dojo/NodeList-dom',
     'gis/plugins/async!//maps.googleapis.com/maps/api/js?libraries=drawing,places&sensor=false"'
